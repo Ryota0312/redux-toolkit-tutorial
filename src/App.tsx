@@ -25,6 +25,7 @@ function App() {
             <button onClick={() => dispatch(decrement())}>Decrement</button>
             <input type={'text'} value={inputNum} onChange={(e) => setInputNum(Number(e.target.value))} />
             <button onClick={() => dispatch(incrementByAmount(inputNum))}>Increment By Amount</button>
+            <button onClick={() => dispatch(userActions.setAge(count))}>Set Age</button>
             <br />
             <input type={'text'} value={inputName} onChange={(e) => setInputName(e.target.value)} />
             <button onClick={() => dispatch(userActions.setName(inputName))}>Change Name</button>
